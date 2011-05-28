@@ -1,5 +1,5 @@
 Exchange::Application.routes.draw do
-  
+
   match '/' => 'site#index'
   match '/home' => 'site#home'
 
@@ -9,6 +9,8 @@ Exchange::Application.routes.draw do
 
   match '/login' => 'users#login'
   match '/register' => 'users#register'
+
+  resources :orders
 
   match ':controller(/:action(/:id(.:format)))'
   # The priority is based upon order of creation:
