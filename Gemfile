@@ -9,6 +9,8 @@ gem 'sqlite3'
 
 gem 'rake', '0.8.7'
 
+gem 'bcrypt-ruby', '>=2.1.4'
+
 gem 'haml'
 
 # Use unicorn as the web server
