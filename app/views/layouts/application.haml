@@ -1,0 +1,23 @@
+%html
+  %head
+    %title Exchange
+    = stylesheet_link_tag :all
+    = csrf_meta_tag
+  %body
+    %div.logo
+      %a{:href => "/"}
+        %img{:src => "images/logo.png"}
+    %div.login_register
+      = link_to "Login", "/login"
+      |
+      = link_to "Register", "/register"
+    = yield
+    %center
+      %div.footer
+        Foo, LLC
+        |
+        = link_to "Terms of Service", "/terms"
+        |
+        = link_to "Privacy Policy", "/privacy"
+        |
+        = link_to "API", "/api"
