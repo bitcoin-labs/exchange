@@ -1,4 +1,15 @@
 Exchange::Application.routes.draw do
+  
+  match '/' => 'site#index'
+  match '/home' => 'site#home'
+
+  match '/api' => 'site#api'
+  match '/terms' => 'site#terms'
+  match '/privacy' => 'site#privacy'
+
+  match '/login' => 'users#login'
+  match '/register' => 'users#register'
+
   match ':controller(/:action(/:id(.:format)))'
   # The priority is based upon order of creation:
   # first created -> highest priority.

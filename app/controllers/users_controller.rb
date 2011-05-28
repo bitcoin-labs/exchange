@@ -1,4 +1,4 @@
-class SiteController < ApplicationController
+class UsersController < ApplicationController
   
   def login
     respond_to {|format| format.html}
