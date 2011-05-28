@@ -1,5 +1,7 @@
 Exchange::Application.routes.draw do
 
+  resources :users
+
   match '/' => 'site#index'
   match '/home' => 'site#home'
 

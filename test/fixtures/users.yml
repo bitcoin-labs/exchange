@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  token: MyText
+  email: MyText
+  password_hash: MyText
+
+two:
+  token: MyText
+  email: MyText
+  password_hash: MyText
