@@ -13,6 +13,7 @@ Exchange::Application.routes.draw do
   match '/register' => 'users#register'
 
   resources :orders
+  resources :users
 
   match ':controller(/:action(/:id(.:format)))'
   # The priority is based upon order of creation:

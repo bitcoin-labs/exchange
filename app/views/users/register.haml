@@ -1,30 +1,31 @@
 %center
   %h1 Register
-  %table.form.big_form
-    %tr
-      %td.L
-        %label Username:
-      %td.R
-        %input.medium_text_input{:name => "username", :type => "text"}
-    %tr
-      %td.L
-        %label Password:
-      %td.R
-        %input.medium_text_input{:name => "password", :type => "password"}
-    %tr
-      %td.L
-        %label Email:
-      %td.R
-        %input.medium_text_input{:name => "password", :type => "text"}
-    %tr
-      %td{:colspan => "2"}
-        %input{:name => "terms_privacy_checkbox", :type => "checkbox"}
-        I agree to the
-        = link_to "Terms of Service", "/terms"
-        and
-        = link_to "Privacy Policy", "/privacy"
-    %tr
-      %td{:colspan => "2"}
-        %center
-          %a.B_medium.B_orange.B_register(href="#")
-            %div Register
+  = form_tag(users_path, :method => "POST", :name => "mainform") do
+    %table.form.big_form
+      %tr
+        %td.L
+          %label Username:
+        %td.R
+          %input.medium_text_input{:name => "user", :type => "text"}
+      %tr
+        %td.L
+          %label Password:
+        %td.R
+          %input.medium_text_input{:name => "password", :type => "password"}
+      %tr
+        %td.L
+          %label Email:
+        %td.R
+          %input.medium_text_input{:name => "email", :type => "text"}
+      %tr
+        %td{:colspan => "2"}
+          %input{:name => "terms_privacy_checkbox", :type => "checkbox"}
+          I agree to the
+          = link_to "Terms of Service", "/terms"
+          and
+          = link_to "Privacy Policy", "/privacy"
+      %tr
+        %td{:colspan => "2"}
+          %center
+            %a.B_medium.B_orange.B_register{:href => "#", :onclick => "document.mainform.submit();"}
+              %div Register
