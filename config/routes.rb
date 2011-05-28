@@ -1,4 +1,6 @@
 Exchange::Application.routes.draw do
+  resources :orders
+
   match ':controller(/:action(/:id(.:format)))'
   # The priority is based upon order of creation:
   # first created -> highest priority.
