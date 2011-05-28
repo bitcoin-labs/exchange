@@ -5,5 +5,7 @@ a:hover{text-decoration:underline}
 .form .L{text-align:right}
 .form label{color:#444}
 .form .R{text-align:left}
+.big_form{padding:20px;margin:50px;background:#fff;border:1px solid #666;border-radius:9px}
+.medium_text_input{font-size:110%;padding:3px;width}
 .login_register{position:absolute;top:10px;right:10px;font-size:90%}
 .footer{font-size:90%}

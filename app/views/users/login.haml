@@ -1,2 +1,18 @@
 %center
-  %h2 TODO login
+  %h1 Login
+  %table.form.big_form
+    %tr
+      %td.L
+        %label Username:
+      %td.R
+        %input.medium_text_input{:name => "username", :type => "text"}
+    %tr
+      %td.L
+        %label Password:
+      %td.R
+        %input.medium_text_input{:name => "password", :type => "password"}
+    %tr
+      %td{:colspan => "2"}
+        %center
+          %a.B_medium.B_orange.B_login(href="#")
+            %div Login
