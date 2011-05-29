@@ -1,0 +1,53 @@
+<%= form_for(@option) do |f| %>
+  <% if @option.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@option.errors.count, "error") %> prohibited this option from being saved:</h2>
+
+      <ul>
+      <% @option.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_ID %><br />
+    <%= f.text_field :user_ID %>
+  </div>
+  <div class="field">
+    <%= f.label :startTime %><br />
+    <%= f.datetime_select :startTime %>
+  </div>
+  <div class="field">
+    <%= f.label :endTime %><br />
+    <%= f.datetime_select :endTime %>
+  </div>
+  <div class="field">
+    <%= f.label :creationTime %><br />
+    <%= f.datetime_select :creationTime %>
+  </div>
+  <div class="field">
+    <%= f.label :spotPrice %><br />
+    <%= f.text_field :spotPrice %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :numberCoin %><br />
+    <%= f.text_field :numberCoin %>
+  </div>
+  <div class="field">
+    <%= f.label :buyerID %><br />
+    <%= f.text_field :buyerID %>
+  </div>
+  <div class="field">
+    <%= f.label :purchaseTime %><br />
+    <%= f.datetime_select :purchaseTime %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

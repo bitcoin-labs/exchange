@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_ID: MyString
+  startTime: 2011-05-28 23:31:19
+  endTime: 2011-05-28 23:31:19
+  creationTime: 2011-05-28 23:31:19
+  spotPrice: 1
+  type: 1
+  numberCoin: 1
+  buyerID: 1
+  purchaseTime: 2011-05-28 23:31:19
+
+two:
+  user_ID: MyString
+  startTime: 2011-05-28 23:31:19
+  endTime: 2011-05-28 23:31:19
+  creationTime: 2011-05-28 23:31:19
+  spotPrice: 1
+  type: 1
+  numberCoin: 1
+  buyerID: 1
+  purchaseTime: 2011-05-28 23:31:19

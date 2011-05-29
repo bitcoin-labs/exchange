@@ -1,5 +1,7 @@
 Exchange::Application.routes.draw do
 
+  resources :options
+
   resources :users
 
   match '/' => 'site#index'

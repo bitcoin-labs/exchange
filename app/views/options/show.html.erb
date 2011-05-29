@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User id:</b>
+  <%= @option.user_ID %>
+</p>
+
+<p>
+  <b>Starttime:</b>
+  <%= @option.startTime %>
+</p>
+
+<p>
+  <b>Endtime:</b>
+  <%= @option.endTime %>
+</p>
+
+<p>
+  <b>Creationtime:</b>
+  <%= @option.creationTime %>
+</p>
+
+<p>
+  <b>Spotprice:</b>
+  <%= @option.spotPrice %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @option.type %>
+</p>
+
+<p>
+  <b>Numbercoin:</b>
+  <%= @option.numberCoin %>
+</p>
+
+<p>
+  <b>Buyerid:</b>
+  <%= @option.buyerID %>
+</p>
+
+<p>
+  <b>Purchasetime:</b>
+  <%= @option.purchaseTime %>
+</p>
+
+
+<%= link_to 'Edit', edit_option_path(@option) %> |
+<%= link_to 'Back', options_path %>

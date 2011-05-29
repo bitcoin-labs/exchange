@@ -3,6 +3,10 @@ require 'bcrypt'
 
 class User < ActiveRecord::Base
   include BCrypt
+  
+  belongs_to :user_transaction
+  belongs_to :order
+  belongs_to :option
 
   def password
     @password ||= Password.new(password_hash)

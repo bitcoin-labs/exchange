@@ -1,0 +1,39 @@
+<h1>Listing options</h1>
+
+<table>
+  <tr>
+    <th>User id</th>
+    <th>Starttime</th>
+    <th>Endtime</th>
+    <th>Creationtime</th>
+    <th>Spotprice</th>
+    <th>Type</th>
+    <th>Numbercoin</th>
+    <th>Buyerid</th>
+    <th>Purchasetime</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @options.each do |option| %>
+  <tr>
+    <td><%= option.user_ID %></td>
+    <td><%= option.startTime %></td>
+    <td><%= option.endTime %></td>
+    <td><%= option.creationTime %></td>
+    <td><%= option.spotPrice %></td>
+    <td><%= option.type %></td>
+    <td><%= option.numberCoin %></td>
+    <td><%= option.buyerID %></td>
+    <td><%= option.purchaseTime %></td>
+    <td><%= link_to 'Show', option %></td>
+    <td><%= link_to 'Edit', edit_option_path(option) %></td>
+    <td><%= link_to 'Destroy', option, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Option', new_option_path %>
