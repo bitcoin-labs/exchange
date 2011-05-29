@@ -1,5 +1,9 @@
 Exchange::Application.routes.draw do
 
+  resources :cash_transactions
+
+  resources :assets
+
   resources :options
 
   resources :users
